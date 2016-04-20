@@ -26,7 +26,6 @@ class main extends PluginBase implements Listener{
 		$this->touch = [];
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
-	
 	public function PlayerItemHeld(PlayerItemHeldEvent $ev){
 		$player = $ev->getPlayer();
         	if($item instanceof Item){
@@ -45,7 +44,7 @@ class main extends PluginBase implements Listener{
 					$p->sendMessage($this->getConfig()->get("slot1-description"));
 				}else{
 					$i->setCount($i->getCount() - 1);
-					$player->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $player->getName(), $this->getConfig()->get("slot1-command")));
+					$player->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot1-command")));
 				}
 			$this->touch[$n] = microtime(true) + 1;
 			$event->setCancelled();
