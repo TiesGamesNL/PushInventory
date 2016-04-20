@@ -29,8 +29,9 @@ class Main extends PluginBase implements Listener{
 	}
 	public function PlayerItemHeld(PlayerItemHeldEvent $ev){
 		$player = $ev->getPlayer();
+		$item = $ev->getItem();
         	if($item instanceof Item){
-          		if($b->getID() == $this->getConfig()->get("slot1")){
+          		if($b->getID() === $this->getConfig()->get("slot1")){
           			$player->sendMessage($this->getConfig()->get("slot1-description"));
           		}
 		 }
@@ -38,7 +39,7 @@ class Main extends PluginBase implements Listener{
 	public function onPlayerInteract(PlayerInteractEvent $event){
 		$p = $event->getPlayer();
 		$i = $event->getItem();
-		if($b->getID() == $this->getConfig()->get("slot1")){
+		if($b->getID() === $this->getConfig()->get("slot1")){
 			if(!isset($this->touch[$n = $p->getName()])) $this->touch[$n] = 0;
 				$c = microtime(true) - $this->touch[$n];
 				if($c > 0){
