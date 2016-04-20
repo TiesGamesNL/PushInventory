@@ -1,19 +1,20 @@
 <?php
 
 namespace driesboy\main;
-
+//base
 use pocketmine\plugin\PluginBase;
-use pocketmine\command\Command;
-use pocketmine\command\CommandSender;
+use pocketmine\Player;
+use pocketmine\event\Listener;
+//config
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
-use pocketmine\event\Listener;
+//items
 use pocketmine\event\player\PlayerInteractEvent;
-use pocketmine\Player;
 use pocketmine\item\Item;
 use pocketmine\event\player\PlayerItemHeldEvent;
-use pocketmine\command\CommandSender;
+//commands
 use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\command\CommandExecutor;
 
