@@ -1,0 +1,6 @@
+name: PushInventory
+main: driesboy/main
+author: Driesboy
+version: 1.0
+api: [2.0.0]
+load: STARTUP
