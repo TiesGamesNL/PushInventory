@@ -1,6 +1,6 @@
 <?php
 
-namespace driesboy\main;
+namespace driesboy\Main;
 //base
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
@@ -18,7 +18,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\command\CommandExecutor;
 
-class main extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener{
 
 	public function onEnable(){
 		@mkdir($this->getDataFolder());
