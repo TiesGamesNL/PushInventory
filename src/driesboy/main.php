@@ -1,6 +1,6 @@
 <?php
 
-namespace driesboy/main;
+namespace driesboy\main;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
@@ -28,27 +28,27 @@ class main extends PluginBase implements Listener{
 	}
 	
 	public function PlayerItemHeld(PlayerItemHeldEvent $ev){
-	      $player = $ev->getPlayer();
-        if($item instanceof Item){
-          if($b->getID() == $this->getConfig()->get("slot1")){
-          $player->sendMessage($this->getConfig()->get("slot1-description"));
-          }
-        }
-   }
+		$player = $ev->getPlayer();
+        	if($item instanceof Item){
+          		if($b->getID() == $this->getConfig()->get("slot1")){
+          			$player->sendMessage($this->getConfig()->get("slot1-description"));
+          		}
+		 }
+   	}
 	public function onPlayerInteract(PlayerInteractEvent $event){
 		$p = $event->getPlayer();
 		$i = $event->getItem();
 		if($b->getID() == $this->getConfig()->get("slot1")){
-		if(!isset($this->touch[$n = $p->getName()])) $this->touch[$n] = 0;
-		$c = microtime(true) - $this->touch[$n];
-		if($c > 0){
-			$p->sendMessage($this->getConfig()->get("slot1-description"));
-		}else{
-			$i->setCount($i->getCount() - 1);
-			$player->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $player->getName(), $this->getConfig()->get("slot1-command")));
+			if(!isset($this->touch[$n = $p->getName()])) $this->touch[$n] = 0;
+				$c = microtime(true) - $this->touch[$n];
+				if($c > 0){
+					$p->sendMessage($this->getConfig()->get("slot1-description"));
+				}else{
+					$i->setCount($i->getCount() - 1);
+					$player->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $player->getName(), $this->getConfig()->get("slot1-command")));
+				}
+			$this->touch[$n] = microtime(true) + 1;
+			$event->setCancelled();
 		}
-		$this->touch[$n] = microtime(true) + 1;
-		$event->setCancelled();
 	}
-	}
-	}
+}
