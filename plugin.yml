@@ -1,5 +1,5 @@
 name: PushInventory
-main: driesboy\main
+main: driesboy\Main
 author: Driesboy
 version: 1.0
 api: [2.0.0]
