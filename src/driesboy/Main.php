@@ -1,6 +1,6 @@
 <?php
 
-namespace driesboy\Main;
+namespace driesboy;
 //base
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
