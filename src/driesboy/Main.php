@@ -33,33 +33,18 @@ class Main extends PluginBase implements Listener{
         	if($item instanceof Item){
           		if($item->getID() === $this->getConfig()->get("slot1")){
           			$player->sendPopup($this->getConfig()->get("slot1-Tip"));
-          			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$player->getInventory()->clearAll();	
-          			}
           		}
           		if($item->getID() === $this->getConfig()->get("slot2")){
           			$player->sendPopup($this->getConfig()->get("slot2-Tip"));
-          			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$player->getInventory()->clearAll();	
-          			}
           		}
           		if($item->getID() === $this->getConfig()->get("slot3")){
           			$player->sendPopup($this->getConfig()->get("slot3-Tip"));
-          			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$player->getInventory()->clearAll();	
-          			}
           		}
           		if($item->getID() === $this->getConfig()->get("slot4")){
           			$player->sendPopup($this->getConfig()->get("slot4-Tip"));
-          			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$player->getInventory()->clearAll();	
-          			}
           		}
           		if($item->getID() === $this->getConfig()->get("slot5")){
           			$player->sendPopup($this->getConfig()->get("slot5-Tip"));
-          			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$player->getInventory()->clearAll();	
-          			}
           		}
 		 }
    	}
@@ -67,19 +52,34 @@ class Main extends PluginBase implements Listener{
 		$p = $event->getPlayer();
 		$i = $event->getItem();
 		if($i->getID() === $this->getConfig()->get("slot1")){
-					$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot1-command")));
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot1-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$player->getInventory()->clearAll();	
+          			}
 		}
 		if($i->getID() === $this->getConfig()->get("slot2")){
-					$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot2-command")));
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot2-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$player->getInventory()->clearAll();	
+          			}
 		}
 		if($i->getID() === $this->getConfig()->get("slot3")){
-					$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot3-command")));
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot3-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$player->getInventory()->clearAll();	
+          			}
 		}
 		if($i->getID() === $this->getConfig()->get("slot4")){
-					$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot4-command")));
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot4-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$player->getInventory()->clearAll();	
+          			}
 		}
 		if($i->getID() === $this->getConfig()->get("slot5")){
-					$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot5-command")));
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot5-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$player->getInventory()->clearAll();	
+          			}
 		}
 	}
 	public function onJoin(PlayerJoinEvent $event){
