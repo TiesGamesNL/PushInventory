@@ -7,7 +7,7 @@ use pocketmine\Player;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\entity\EntityLevelChangeEvent;
-use pocketmine\event\player\PlayerRespawnEvent 
+use pocketmine\event\player\PlayerRespawnEvent;
 //config
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
