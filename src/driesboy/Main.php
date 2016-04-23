@@ -32,7 +32,19 @@ class Main extends PluginBase implements Listener{
 		$item = $ev->getItem();
         	if($item instanceof Item){
           		if($item->getID() === $this->getConfig()->get("slot1")){
-          			$player->sendPopup($this->getConfig()->get("slot1-description"));
+          			$player->sendPopup($this->getConfig()->get("slot1-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot2")){
+          			$player->sendPopup($this->getConfig()->get("slot2-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot3")){
+          			$player->sendPopup($this->getConfig()->get("slot3-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot4")){
+          			$player->sendPopup($this->getConfig()->get("slot4-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot5")){
+          			$player->sendPopup($this->getConfig()->get("slot5-Tip"));
           		}
 		 }
    	}
@@ -40,14 +52,19 @@ class Main extends PluginBase implements Listener{
 		$p = $event->getPlayer();
 		$i = $event->getItem();
 		if($i->getID() === $this->getConfig()->get("slot1")){
-			if(!isset($this->touch[$n = $p->getName()])) $this->touch[$n] = 0;
-				$c = microtime(true) - $this->touch[$n];
-				if($c > 0){
-					$p->sendMessage($this->getConfig()->get("slot1-description"));
 					$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot1-command")));
-			$this->touch[$n] = microtime(true) + 1;
-			$event->setCancelled();
 		}
+		if($i->getID() === $this->getConfig()->get("slot2")){
+					$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot2-command")));
+		}
+		if($i->getID() === $this->getConfig()->get("slot3")){
+					$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot3-command")));
+		}
+		if($i->getID() === $this->getConfig()->get("slot4")){
+					$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot4-command")));
+		}
+		if($i->getID() === $this->getConfig()->get("slot5")){
+					$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot5-command")));
 		}
 	}
 }
