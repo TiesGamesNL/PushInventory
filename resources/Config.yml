@@ -3,21 +3,21 @@ GiveItemsOnJoin: true
 ClearItemsAfterUse: true
 #please dont add more slots
 slot1: 276
-slot1-Tip: $6Tap on the ground to go to PvP!
+slot1-Tip: §6Tap on the ground to go to PvP!
 slot1-command: mw tp {PLAYER} world
 
-slot2: 276
-slot2-Tip: $6Tap on the ground to go to Hotel!
+slot2: 355
+slot2-Tip: §6Tap on the ground to go to Hotel!
 slot2-command: mw tp {PLAYER} Gamecraft Hotel original
 
 slot3: 261
-slot3-Tip: $6Tap on the ground to go to Skywars!
+slot3-Tip: §6Tap on the ground to go to Skywars!
 slot3-command: tp {PLAYER} 1055 5 -473
 
 slot4: 1
-slot4-Tip: $6Tap on the ground to go to MyPlot!
+slot4-Tip: §6Tap on the ground to go to MyPlot!
 slot4-command: mw tp {PLAYER} plot
 
 slot5: 339
-slot5-Tip: $6Tap on the ground to go to see your money!
+slot5-Tip: §6Tap on the ground to go to see your money!
 slot5-command: rca {PLAYER} mymoney
