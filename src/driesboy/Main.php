@@ -84,15 +84,15 @@ class Main extends PluginBase implements Listener{
 	public function onJoin(PlayerJoinEvent $event){
 		if($this->getConfig()->get("GiveItemsOnJoin") === true){
 			$p = $event->getPlayer();
-			$p->getInventory()->setItem(1, Item::get({$this->getConfig()->get("slot4")},0,1))
+			$p->getInventory()->setItem(1, Item::get($this->getConfig()->get("slot1"),0,1))
 			$p->getInventory()->setHotbarSlotIndex(1,1);
-			$p->getInventory()->setItem(2, Item::get({$this->getConfig()->get("slot4")},0,1))
+			$p->getInventory()->setItem(2, Item::get($this->getConfig()->get("slot2"),0,1))
 			$p->getInventory()->setHotbarSlotIndex(2,2);
-			$p->getInventory()->setItem(3, Item::get({$this->getConfig()->get("slot4")},0,1))
+			$p->getInventory()->setItem(3, Item::get($this->getConfig()->get("slot3"),0,1))
 			$p->getInventory()->setHotbarSlotIndex(3,3);
-			$p->getInventory()->setItem(4, Item::get({$this->getConfig()->get("slot4")},0,1))
+			$p->getInventory()->setItem(4, Item::get($this->getConfig()->get("slot4"),0,1))
 			$p->getInventory()->setHotbarSlotIndex(4,4);
-			$p->getInventory()->setItem(5, Item::get({$this->getConfig()->get("slot4")},0,1))
+			$p->getInventory()->setItem(5, Item::get($this->getConfig()->get("slot5"),0,1))
 			$p->getInventory()->setHotbarSlotIndex(5,5);
 		}
 	}
