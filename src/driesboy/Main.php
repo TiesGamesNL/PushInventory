@@ -47,7 +47,6 @@ class Main extends PluginBase implements Listener{
 					$player->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot1-command")));
 			$this->touch[$n] = microtime(true) + 1;
 			$event->setCancelled();
-				$event->setCancelled();
 		}
 		}
 	}
