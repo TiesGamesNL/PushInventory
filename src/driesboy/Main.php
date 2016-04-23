@@ -54,31 +54,31 @@ class Main extends PluginBase implements Listener{
 		if($i->getID() === $this->getConfig()->get("slot1")){
 			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot1-command")));
 			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$player->getInventory()->clearAll();	
+          				$p->getInventory()->clearAll();	
           			}
 		}
 		if($i->getID() === $this->getConfig()->get("slot2")){
 			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot2-command")));
 			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$player->getInventory()->clearAll();	
+          				$p->getInventory()->clearAll();	
           			}
 		}
 		if($i->getID() === $this->getConfig()->get("slot3")){
 			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot3-command")));
 			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$player->getInventory()->clearAll();	
+          				$p->getInventory()->clearAll();	
           			}
 		}
 		if($i->getID() === $this->getConfig()->get("slot4")){
 			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot4-command")));
 			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$player->getInventory()->clearAll();	
+          				$p->getInventory()->clearAll();	
           			}
 		}
 		if($i->getID() === $this->getConfig()->get("slot5")){
 			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot5-command")));
 			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$player->getInventory()->clearAll();	
+          				$p->getInventory()->clearAll();	
           			}
 		}
 	}
