@@ -24,7 +24,6 @@ class Main extends PluginBase implements Listener{
 		@mkdir($this->getDataFolder());
                 $this->saveDefaultConfig();
                 $this->reloadConfig();
-		$this->touch = [];
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 	public function PlayerItemHeld(PlayerItemHeldEvent $ev){
@@ -33,18 +32,33 @@ class Main extends PluginBase implements Listener{
         	if($item instanceof Item){
           		if($item->getID() === $this->getConfig()->get("slot1")){
           			$player->sendPopup($this->getConfig()->get("slot1-Tip"));
+          			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$player->getInventory()->clearAll();	
+          			}
           		}
           		if($item->getID() === $this->getConfig()->get("slot2")){
           			$player->sendPopup($this->getConfig()->get("slot2-Tip"));
+          			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$player->getInventory()->clearAll();	
+          			}
           		}
           		if($item->getID() === $this->getConfig()->get("slot3")){
           			$player->sendPopup($this->getConfig()->get("slot3-Tip"));
+          			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$player->getInventory()->clearAll();	
+          			}
           		}
           		if($item->getID() === $this->getConfig()->get("slot4")){
           			$player->sendPopup($this->getConfig()->get("slot4-Tip"));
+          			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$player->getInventory()->clearAll();	
+          			}
           		}
           		if($item->getID() === $this->getConfig()->get("slot5")){
           			$player->sendPopup($this->getConfig()->get("slot5-Tip"));
+          			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$player->getInventory()->clearAll();	
+          			}
           		}
 		 }
    	}
