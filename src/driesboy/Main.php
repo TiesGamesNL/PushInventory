@@ -5,6 +5,7 @@ namespace driesboy;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 use pocketmine\event\Listener;
+use pocketmine\event\player\PlayerJoinEvent;
 //config
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
