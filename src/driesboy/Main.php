@@ -7,6 +7,7 @@ use pocketmine\Player;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\entity\EntityLevelChangeEvent;
+use pocketmine\event\player\PlayerRespawnEvent 
 //config
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
@@ -101,6 +102,20 @@ class Main extends PluginBase implements Listener{
 	public function onWorldChange(EntityLevelChangeEvent $event){
 		$player = $event->getPlayer();
 		if($player->getTarget() === $this->getConfig()->get("workingworlds"){
+			$p->getInventory()->setItem(1, Item::get($this->getConfig()->get("slot1"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(1,1);
+			$p->getInventory()->setItem(2, Item::get($this->getConfig()->get("slot2"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(2,2);
+			$p->getInventory()->setItem(3, Item::get($this->getConfig()->get("slot3"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(3,3);
+			$p->getInventory()->setItem(4, Item::get($this->getConfig()->get("slot4"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(4,4);
+			$p->getInventory()->setItem(5, Item::get($this->getConfig()->get("slot5"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(5,5);
+		}
+	}
+	public function onRespawn(PlayerRespawnEvent $event){
+		if($this->getConfig()->get("GiveItemsOnRespawn") === true){
 			$p->getInventory()->setItem(1, Item::get($this->getConfig()->get("slot1"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(1,1);
 			$p->getInventory()->setItem(2, Item::get($this->getConfig()->get("slot2"),0,1));
