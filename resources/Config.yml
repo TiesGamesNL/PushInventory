@@ -1,3 +1,7 @@
+#settings
+GiveItemsOnJoin: true
+ClearItemsAfterUse: true
+#please dont add more slots
 slot1: 276
 slot1-Tip: $6Tap on the ground to go to PvP!
 slot1-command: mw tp {PLAYER} world
