@@ -1,6 +1,9 @@
 #settings
 GiveItemsOnJoin: true
+GiveItemsOnRespawn: true
 ClearItemsAfterUse: true
+workingworlds:
+- Lobby
 #please dont add more slots
 slot1: 276
 slot1-Tip: §6Tap on the ground to go to PvP!
