@@ -32,7 +32,7 @@ class Main extends PluginBase implements Listener{
 		$item = $ev->getItem();
         	if($item instanceof Item){
           		if($item->getID() === $this->getConfig()->get("slot1")){
-          			$player->sendMessage($this->getConfig()->get("slot1-description"));
+          			$player->sendPopup($this->getConfig()->get("slot1-description"));
           		}
 		 }
    	}
@@ -44,9 +44,9 @@ class Main extends PluginBase implements Listener{
 				$c = microtime(true) - $this->touch[$n];
 				if($c > 0){
 					$p->sendMessage($this->getConfig()->get("slot1-description"));
+					$player->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot1-command")));
 				}else{
 					$i->setCount($i->getCount() - 1);
-					$player->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot1-command")));
 				}
 			$this->touch[$n] = microtime(true) + 1;
 			$event->setCancelled();
