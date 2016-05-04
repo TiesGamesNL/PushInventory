@@ -1,21 +1,20 @@
 <?php
 
 namespace driesboy;
-//base
+
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\entity\EntityLevelChangeEvent;
 use pocketmine\event\player\PlayerRespawnEvent;
-//config
+// Utils
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
-//items
+// Events
 use pocketmine\event\player\PlayerInteractEvent;
-use pocketmine\item\Item;
 use pocketmine\event\player\PlayerItemHeldEvent;
-//commands
+// Command
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\ConsoleCommandSender;
