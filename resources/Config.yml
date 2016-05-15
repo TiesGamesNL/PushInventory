@@ -4,26 +4,26 @@ GiveItemsOnRespawn: true
 ClearItemsAfterUse: true
 workingworlds:
 - Lobby
-  
- -slot2: 355
- -slot2-Tip: §6Tap on the ground to go to Hotel!
- -slot2-command: mw tp {PLAYER} Gamecraft Hotel original
- -
- -slot3: 261
- -slot3-Tip: §6Tap on the ground to go to Skywars!
- -slot3-command: tp {PLAYER} 1055 5 -473
- -
- -slot4: 1
- -slot4-Tip: §6Tap on the ground to go to MyPlot!
- -slot4-command: mw tp {PLAYER} plot
- -
- -slot5: 339
- -slot5-Tip: §6Tap on the ground to go to see your money!
- -slot5-command: rca {PLAYER} mymoney
 
 # Setup a slots in following format
 slots:
  276:
   tip: "§6Tap on the ground to go to PvP!"
   commands:
-   - "mw tp {PLAYER} worl"
+   - "mw tp {PLAYER} world"
+  355:
+  tip: "§6Tap on the ground to go to Hotel!"
+  commands:
+   - "mw tp {PLAYER} Gamecraft Hotel original"
+  261:
+  tip: "§6Tap on the ground to go to Skywars!"
+  commands:
+   - "tp {PLAYER} 1055 5 -473"
+  1:
+  tip: "§6Tap on the ground to go to MyPlot!"
+  commands:
+   - "mw tp {PLAYER} plot"
+  339:
+  tip: "§6Tap on the ground to go to see your money!"
+  commands:
+   - "rca {PLAYER} mymoney" 
