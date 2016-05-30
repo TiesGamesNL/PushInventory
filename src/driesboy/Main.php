@@ -91,7 +91,7 @@ class Main extends PluginBase implements Listener{
 	 */
 	public function onRespawn(PlayerRespawnEvent $event){
 		if($this->getConfigValue("GiveItemsOnRespawn") === true){
-			$this->giveItems($event->getPlayer())
+			$this->giveItems($event->getPlayer());
 		}
 	}
 	
