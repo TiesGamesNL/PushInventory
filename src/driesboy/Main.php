@@ -76,9 +76,6 @@ class Main extends PluginBase implements Listener{
 		}
 		if($i->getID() === $this->getConfig()->get("slot5")){
 			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot5-command")));
-			if($this->getConfig()->get("ClearItemsAfterUse") === true){
-          				$p->getInventory()->clearAll();	
-          			}
 		}
 	}
 	public function onJoin(PlayerJoinEvent $event){
