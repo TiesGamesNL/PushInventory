@@ -138,20 +138,18 @@ class Main extends PluginBase implements Listener{
     		}
     		$target = $event->getTarget();
     		if($target === $this->getConfig()->get("workingworlds")){
-    			$entity->getInventory()->clearAll();
-    			$p = $entity:
-    			$p->getInventory()->setItem(1, Item::get($this->getConfig()->get("slot1"),0,1));
-			$p->getInventory()->setHotbarSlotIndex(1,1);
-			$p->getInventory()->setItem(2, Item::get($this->getConfig()->get("slot2"),0,1));
-			$p->getInventory()->setHotbarSlotIndex(2,2);
-			$p->getInventory()->setItem(3, Item::get($this->getConfig()->get("slot3"),0,1));
-			$p->getInventory()->setHotbarSlotIndex(3,3);
-			$p->getInventory()->setItem(4, Item::get($this->getConfig()->get("slot4"),0,1));
-			$p->getInventory()->setHotbarSlotIndex(4,4);
-			$p->getInventory()->setItem(5, Item::get($this->getConfig()->get("slot5"),0,1));
-			$p->getInventory()->setHotbarSlotIndex(5,5);
-			$p->getInventory()->setItem(6, Item::get($this->getConfig()->get("slot6"),0,1));
-			$p->getInventory()->setHotbarSlotIndex(6,6);
+    			$entity->getInventory()->setItem(1, Item::get($this->getConfig()->get("slot1"),0,1));
+			$entity->getInventory()->setHotbarSlotIndex(1,1);
+			$entity->getInventory()->setItem(2, Item::get($this->getConfig()->get("slot2"),0,1));
+			$entity->getInventory()->setHotbarSlotIndex(2,2);
+			$entity->getInventory()->setItem(3, Item::get($this->getConfig()->get("slot3"),0,1));
+			$entity->getInventory()->setHotbarSlotIndex(3,3);
+			$entity->getInventory()->setItem(4, Item::get($this->getConfig()->get("slot4"),0,1));
+			$entity->getInventory()->setHotbarSlotIndex(4,4);
+			$entity->getInventory()->setItem(5, Item::get($this->getConfig()->get("slot5"),0,1));
+			$entity->getInventory()->setHotbarSlotIndex(5,5);
+			$entity->getInventory()->setItem(6, Item::get($this->getConfig()->get("slot6"),0,1));
+			$entity->getInventory()->setHotbarSlotIndex(6,6);
     		}
     	}
     }
