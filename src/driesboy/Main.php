@@ -30,6 +30,7 @@ class Main extends PluginBase implements Listener{
 		$player = $ev->getPlayer();
 		$item = $ev->getItem();
         	if($item instanceof Item){
+        		if($p->getLevel()->getName() === $this->getConfig()->get("workingworlds")){
           		if($item->getID() === $this->getConfig()->get("slot1")){
           			$player->sendPopup($this->getConfig()->get("slot1-Tip"));
           		}
@@ -45,11 +46,16 @@ class Main extends PluginBase implements Listener{
           		if($item->getID() === $this->getConfig()->get("slot5")){
           			$player->sendPopup($this->getConfig()->get("slot5-Tip"));
           		}
+			if($item->getID() === $this->getConfig()->get("slot6")){
+          			$player->sendPopup($this->getConfig()->get("slot6-Tip"));
+          		}
 		 }
+        	 }
    	}
 	public function onPlayerInteract(PlayerInteractEvent $event){
 		$p = $event->getPlayer();
 		$i = $event->getItem();
+		if($p->getLevel()->getName() === $this->getConfig()->get("workingworlds")){
 		if($i->getID() === $this->getConfig()->get("slot1")){
 			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot1-command")));
 			if($this->getConfig()->get("ClearItemsAfterUse") === true){
@@ -76,6 +82,17 @@ class Main extends PluginBase implements Listener{
 		}
 		if($i->getID() === $this->getConfig()->get("slot5")){
 			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot5-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+		}
+		if($i->getID() === $this->getConfig()->get("slot6")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
 		}
 	}
 	public function onJoin(PlayerJoinEvent $event){
@@ -91,6 +108,8 @@ class Main extends PluginBase implements Listener{
 			$p->getInventory()->setHotbarSlotIndex(4,4);
 			$p->getInventory()->setItem(5, Item::get($this->getConfig()->get("slot5"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(5,5);
+			$p->getInventory()->setItem(6, Item::get($this->getConfig()->get("slot6"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(6,6);
 		}
 	}
 	public function onRespawn(PlayerRespawnEvent $event){
@@ -106,6 +125,8 @@ class Main extends PluginBase implements Listener{
 			$p->getInventory()->setHotbarSlotIndex(4,4);
 			$p->getInventory()->setItem(5, Item::get($this->getConfig()->get("slot5"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(5,5);
+			$p->getInventory()->setItem(6, Item::get($this->getConfig()->get("slot6"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(6,6);
 		}
 	}
 }
