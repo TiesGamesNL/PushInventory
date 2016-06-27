@@ -30,7 +30,7 @@ class Main extends PluginBase implements Listener{
 		$player = $ev->getPlayer();
 		$item = $ev->getItem();
         	if($item instanceof Item){
-        		if($p->getLevel()->getName() === $this->getConfig()->get("workingworlds")){
+        		if($player->getLevel()->getName() === $this->getConfig()->get("workingworlds")){
           		if($item->getID() === $this->getConfig()->get("slot1")){
           			$player->sendPopup($this->getConfig()->get("slot1-Tip"));
           		}
