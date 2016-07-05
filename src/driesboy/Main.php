@@ -49,6 +49,18 @@ class Main extends PluginBase implements Listener{
 			if($item->getID() === $this->getConfig()->get("slot6")){
           			$player->sendPopup($this->getConfig()->get("slot6-Tip"));
           		}
+          		if($item->getID() === $this->getConfig()->get("slot7")){
+          			$player->sendPopup($this->getConfig()->get("slot7-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot8")){
+          			$player->sendPopup($this->getConfig()->get("slot8-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot9")){
+          			$player->sendPopup($this->getConfig()->get("slot9-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot10")){
+          			$player->sendPopup($this->getConfig()->get("slot10-Tip"));
+          		}
 		 }
         	 }
    	}
@@ -93,6 +105,34 @@ class Main extends PluginBase implements Listener{
           			}
           			
 		}
+		if($i->getID() === $this->getConfig()->get("slot7")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot8")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot9")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot10")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
 		}
 	}
 	public function onJoin(PlayerJoinEvent $event){
@@ -110,6 +150,12 @@ class Main extends PluginBase implements Listener{
 			$p->getInventory()->setHotbarSlotIndex(5,5);
 			$p->getInventory()->setItem(6, Item::get($this->getConfig()->get("slot6"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(6,6);
+			$p->getInventory()->setItem(7, Item::get($this->getConfig()->get("slot7"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(7,7);
+			$p->getInventory()->setItem(8, Item::get($this->getConfig()->get("slot8"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(8,8);
+			$p->getInventory()->setItem(9, Item::get($this->getConfig()->get("slot9"),0,1));
+			$p->getInventory()->setItem(10, Item::get($this->getConfig()->get("slot10"),0,1));
 		}
 	}
 	public function onRespawn(PlayerRespawnEvent $event){
@@ -127,6 +173,12 @@ class Main extends PluginBase implements Listener{
 			$p->getInventory()->setHotbarSlotIndex(5,5);
 			$p->getInventory()->setItem(6, Item::get($this->getConfig()->get("slot6"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(6,6);
+			$p->getInventory()->setItem(7, Item::get($this->getConfig()->get("slot7"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(7,7);
+			$p->getInventory()->setItem(8, Item::get($this->getConfig()->get("slot8"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(8,8);
+			$p->getInventory()->setItem(9, Item::get($this->getConfig()->get("slot9"),0,1));
+			$p->getInventory()->setItem(10, Item::get($this->getConfig()->get("slot10"),0,1));
 		}
 	}
 	 public function onWorldChange(EntityLevelChangeEvent $event){
@@ -138,18 +190,24 @@ class Main extends PluginBase implements Listener{
     		}
     		$target = $event->getTarget();
     		if($target === $this->getConfig()->get("workingworlds")){
-    			$entity->getInventory()->setItem(1, Item::get($this->getConfig()->get("slot1"),0,1));
-			$entity->getInventory()->setHotbarSlotIndex(1,1);
-			$entity->getInventory()->setItem(2, Item::get($this->getConfig()->get("slot2"),0,1));
-			$entity->getInventory()->setHotbarSlotIndex(2,2);
-			$entity->getInventory()->setItem(3, Item::get($this->getConfig()->get("slot3"),0,1));
-			$entity->getInventory()->setHotbarSlotIndex(3,3);
-			$entity->getInventory()->setItem(4, Item::get($this->getConfig()->get("slot4"),0,1));
-			$entity->getInventory()->setHotbarSlotIndex(4,4);
-			$entity->getInventory()->setItem(5, Item::get($this->getConfig()->get("slot5"),0,1));
-			$entity->getInventory()->setHotbarSlotIndex(5,5);
-			$entity->getInventory()->setItem(6, Item::get($this->getConfig()->get("slot6"),0,1));
-			$entity->getInventory()->setHotbarSlotIndex(6,6);
+    			$p->getInventory()->setItem(1, Item::get($this->getConfig()->get("slot1"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(1,1);
+			$p->getInventory()->setItem(2, Item::get($this->getConfig()->get("slot2"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(2,2);
+			$p->getInventory()->setItem(3, Item::get($this->getConfig()->get("slot3"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(3,3);
+			$p->getInventory()->setItem(4, Item::get($this->getConfig()->get("slot4"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(4,4);
+			$p->getInventory()->setItem(5, Item::get($this->getConfig()->get("slot5"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(5,5);
+			$p->getInventory()->setItem(6, Item::get($this->getConfig()->get("slot6"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(6,6);
+			$p->getInventory()->setItem(7, Item::get($this->getConfig()->get("slot7"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(7,7);
+			$p->getInventory()->setItem(8, Item::get($this->getConfig()->get("slot8"),0,1));
+			$p->getInventory()->setHotbarSlotIndex(8,8);
+			$p->getInventory()->setItem(9, Item::get($this->getConfig()->get("slot9"),0,1));
+			$p->getInventory()->setItem(10, Item::get($this->getConfig()->get("slot10"),0,1));
     		}
     	}
     }
