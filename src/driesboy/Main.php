@@ -448,7 +448,7 @@ class Main extends PluginBase implements Listener{
 			$p->getInventory()->setItem(29, Item::get($this->getConfig()->get("slot29"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(29,29);
 			$p->getInventory()->setItem(30, Item::get($this->getConfig()->get("slot30"),0,1));
-			$p->getInventory()->setHotbarSlotIndex(30),30);
+			$p->getInventory()->setHotbarSlotIndex(30,30);
 			$p->getInventory()->setItem(31, Item::get($this->getConfig()->get("slot31"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(31,31);
 			$p->getInventory()->setItem(32, Item::get($this->getConfig()->get("slot32"),0,1));
@@ -523,7 +523,7 @@ class Main extends PluginBase implements Listener{
 			$p->getInventory()->setItem(29, Item::get($this->getConfig()->get("slot29"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(29,29);
 			$p->getInventory()->setItem(30, Item::get($this->getConfig()->get("slot30"),0,1));
-			$p->getInventory()->setHotbarSlotIndex(30),30);
+			$p->getInventory()->setHotbarSlotIndex(30,30);
 			$p->getInventory()->setItem(31, Item::get($this->getConfig()->get("slot31"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(31,31);
 			$p->getInventory()->setItem(32, Item::get($this->getConfig()->get("slot32"),0,1));
@@ -604,7 +604,7 @@ class Main extends PluginBase implements Listener{
 			$p->getInventory()->setItem(29, Item::get($this->getConfig()->get("slot29"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(29,29);
 			$p->getInventory()->setItem(30, Item::get($this->getConfig()->get("slot30"),0,1));
-			$p->getInventory()->setHotbarSlotIndex(30),30);
+			$p->getInventory()->setHotbarSlotIndex(30,30);
 			$p->getInventory()->setItem(31, Item::get($this->getConfig()->get("slot31"),0,1));
 			$p->getInventory()->setHotbarSlotIndex(31,31);
 			$p->getInventory()->setItem(32, Item::get($this->getConfig()->get("slot32"),0,1));
