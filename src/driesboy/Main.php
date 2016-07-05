@@ -384,8 +384,6 @@ class Main extends PluginBase implements Listener{
           			}
           			
 		}
-		
-		}
 		}
 	}
 	public function onJoin(PlayerJoinEvent $event){
