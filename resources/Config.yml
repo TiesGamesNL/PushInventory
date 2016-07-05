@@ -3,7 +3,7 @@ GiveItemsOnJoin: true
 GiveItemsOnRespawn: true
 ClearItemsAfterUse: false
 workingworlds:
-- Hubria
+- Mineplex
 #please dont add more slots
 
 //slot1: 0
