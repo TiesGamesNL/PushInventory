@@ -61,6 +61,84 @@ class Main extends PluginBase implements Listener{
           		if($item->getID() === $this->getConfig()->get("slot10")){
           			$player->sendPopup($this->getConfig()->get("slot10-Tip"));
           		}
+          		if($item->getID() === $this->getConfig()->get("slot11")){
+          			$player->sendPopup($this->getConfig()->get("slot11-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot12")){
+          			$player->sendPopup($this->getConfig()->get("slot12-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot13")){
+          			$player->sendPopup($this->getConfig()->get("slot13-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot14")){
+          			$player->sendPopup($this->getConfig()->get("slot14-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot15")){
+          			$player->sendPopup($this->getConfig()->get("slot15-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot16")){
+          			$player->sendPopup($this->getConfig()->get("slot16-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot17")){
+          			$player->sendPopup($this->getConfig()->get("slot17-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot18")){
+          			$player->sendPopup($this->getConfig()->get("slot18-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot19")){
+          			$player->sendPopup($this->getConfig()->get("slot19-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot20")){
+          			$player->sendPopup($this->getConfig()->get("slot20-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot21")){
+          			$player->sendPopup($this->getConfig()->get("slot21-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot22")){
+          			$player->sendPopup($this->getConfig()->get("slot22-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot23")){
+          			$player->sendPopup($this->getConfig()->get("slot23-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot24")){
+          			$player->sendPopup($this->getConfig()->get("slot24-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot25")){
+          			$player->sendPopup($this->getConfig()->get("slot25-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot26")){
+          			$player->sendPopup($this->getConfig()->get("slot26-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot27")){
+          			$player->sendPopup($this->getConfig()->get("slot27-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot28")){
+          			$player->sendPopup($this->getConfig()->get("slot28-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot29")){
+          			$player->sendPopup($this->getConfig()->get("slot29-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot30")){
+          			$player->sendPopup($this->getConfig()->get("slot30-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot31")){
+          			$player->sendPopup($this->getConfig()->get("slot31-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot32")){
+          			$player->sendPopup($this->getConfig()->get("slot32-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot33")){
+          			$player->sendPopup($this->getConfig()->get("slot33-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot34")){
+          			$player->sendPopup($this->getConfig()->get("slot34-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot35")){
+          			$player->sendPopup($this->getConfig()->get("slot35-Tip"));
+          		}
+          		if($item->getID() === $this->getConfig()->get("slot36")){
+          			$player->sendPopup($this->getConfig()->get("slot36-Tip"));
+          		}
 		 }
         	 }
    	}
@@ -133,6 +211,188 @@ class Main extends PluginBase implements Listener{
           			}
           			
 		}
+		if($i->getID() === $this->getConfig()->get("slot11")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot12")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot13")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot14")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot15")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot16")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot17")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot18")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot19")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot20")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot21")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot22")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot23")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot24")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot25")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot26")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot27")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot28")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot29")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot30")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot31")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot32")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot33")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot34")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot35")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
+		if($i->getID() === $this->getConfig()->get("slot36")){
+			$p->getServer()->dispatchCommand(new ConsoleCommandSender(), str_ireplace("{PLAYER}", $p->getName(), $this->getConfig()->get("slot6-command")));
+			if($this->getConfig()->get("ClearItemsAfterUse") === true){
+          				$p->getInventory()->clearAll();	
+          			}
+          			
+		}
 		}
 	}
 	public function onJoin(PlayerJoinEvent $event){
@@ -156,6 +416,32 @@ class Main extends PluginBase implements Listener{
 			$p->getInventory()->setHotbarSlotIndex(8,8);
 			$p->getInventory()->setItem(9, Item::get($this->getConfig()->get("slot9"),0,1));
 			$p->getInventory()->setItem(10, Item::get($this->getConfig()->get("slot10"),0,1));
+			$p->getInventory()->setItem(11, Item::get($this->getConfig()->get("slot11"),0,1));
+			$p->getInventory()->setItem(12, Item::get($this->getConfig()->get("slot12"),0,1));
+			$p->getInventory()->setItem(13, Item::get($this->getConfig()->get("slot13"),0,1));
+			$p->getInventory()->setItem(14, Item::get($this->getConfig()->get("slot14"),0,1));
+			$p->getInventory()->setItem(15, Item::get($this->getConfig()->get("slot15"),0,1));
+			$p->getInventory()->setItem(16, Item::get($this->getConfig()->get("slot16"),0,1));
+			$p->getInventory()->setItem(17, Item::get($this->getConfig()->get("slot17"),0,1));
+			$p->getInventory()->setItem(18, Item::get($this->getConfig()->get("slot18"),0,1));
+			$p->getInventory()->setItem(19, Item::get($this->getConfig()->get("slot19"),0,1));
+			$p->getInventory()->setItem(20, Item::get($this->getConfig()->get("slot20"),0,1));
+			$p->getInventory()->setItem(21, Item::get($this->getConfig()->get("slot21"),0,1));
+			$p->getInventory()->setItem(22, Item::get($this->getConfig()->get("slot22"),0,1));
+			$p->getInventory()->setItem(23, Item::get($this->getConfig()->get("slot23"),0,1));
+			$p->getInventory()->setItem(24, Item::get($this->getConfig()->get("slot24"),0,1));
+			$p->getInventory()->setItem(25, Item::get($this->getConfig()->get("slot25"),0,1));
+			$p->getInventory()->setItem(26, Item::get($this->getConfig()->get("slot26"),0,1));
+			$p->getInventory()->setItem(27, Item::get($this->getConfig()->get("slot27"),0,1));
+			$p->getInventory()->setItem(28, Item::get($this->getConfig()->get("slot28"),0,1));
+			$p->getInventory()->setItem(29, Item::get($this->getConfig()->get("slot29"),0,1));
+			$p->getInventory()->setItem(30, Item::get($this->getConfig()->get("slot30"),0,1));
+			$p->getInventory()->setItem(31, Item::get($this->getConfig()->get("slot31"),0,1));
+			$p->getInventory()->setItem(32, Item::get($this->getConfig()->get("slot32"),0,1));
+			$p->getInventory()->setItem(33, Item::get($this->getConfig()->get("slot33"),0,1));
+			$p->getInventory()->setItem(34, Item::get($this->getConfig()->get("slot34"),0,1));
+			$p->getInventory()->setItem(35, Item::get($this->getConfig()->get("slot35"),0,1));
+			$p->getInventory()->setItem(36, Item::get($this->getConfig()->get("slot36"),0,1));
 		}
 	}
 	public function onRespawn(PlayerRespawnEvent $event){
@@ -179,6 +465,32 @@ class Main extends PluginBase implements Listener{
 			$p->getInventory()->setHotbarSlotIndex(8,8);
 			$p->getInventory()->setItem(9, Item::get($this->getConfig()->get("slot9"),0,1));
 			$p->getInventory()->setItem(10, Item::get($this->getConfig()->get("slot10"),0,1));
+			$p->getInventory()->setItem(11, Item::get($this->getConfig()->get("slot11"),0,1));
+			$p->getInventory()->setItem(12, Item::get($this->getConfig()->get("slot12"),0,1));
+			$p->getInventory()->setItem(13, Item::get($this->getConfig()->get("slot13"),0,1));
+			$p->getInventory()->setItem(14, Item::get($this->getConfig()->get("slot14"),0,1));
+			$p->getInventory()->setItem(15, Item::get($this->getConfig()->get("slot15"),0,1));
+			$p->getInventory()->setItem(16, Item::get($this->getConfig()->get("slot16"),0,1));
+			$p->getInventory()->setItem(17, Item::get($this->getConfig()->get("slot17"),0,1));
+			$p->getInventory()->setItem(18, Item::get($this->getConfig()->get("slot18"),0,1));
+			$p->getInventory()->setItem(19, Item::get($this->getConfig()->get("slot19"),0,1));
+			$p->getInventory()->setItem(20, Item::get($this->getConfig()->get("slot20"),0,1));
+			$p->getInventory()->setItem(21, Item::get($this->getConfig()->get("slot21"),0,1));
+			$p->getInventory()->setItem(22, Item::get($this->getConfig()->get("slot22"),0,1));
+			$p->getInventory()->setItem(23, Item::get($this->getConfig()->get("slot23"),0,1));
+			$p->getInventory()->setItem(24, Item::get($this->getConfig()->get("slot24"),0,1));
+			$p->getInventory()->setItem(25, Item::get($this->getConfig()->get("slot25"),0,1));
+			$p->getInventory()->setItem(26, Item::get($this->getConfig()->get("slot26"),0,1));
+			$p->getInventory()->setItem(27, Item::get($this->getConfig()->get("slot27"),0,1));
+			$p->getInventory()->setItem(28, Item::get($this->getConfig()->get("slot28"),0,1));
+			$p->getInventory()->setItem(29, Item::get($this->getConfig()->get("slot29"),0,1));
+			$p->getInventory()->setItem(30, Item::get($this->getConfig()->get("slot30"),0,1));
+			$p->getInventory()->setItem(31, Item::get($this->getConfig()->get("slot31"),0,1));
+			$p->getInventory()->setItem(32, Item::get($this->getConfig()->get("slot32"),0,1));
+			$p->getInventory()->setItem(33, Item::get($this->getConfig()->get("slot33"),0,1));
+			$p->getInventory()->setItem(34, Item::get($this->getConfig()->get("slot34"),0,1));
+			$p->getInventory()->setItem(35, Item::get($this->getConfig()->get("slot35"),0,1));
+			$p->getInventory()->setItem(36, Item::get($this->getConfig()->get("slot36"),0,1));
 		}
 	}
 	 public function onWorldChange(EntityLevelChangeEvent $event){
@@ -208,6 +520,32 @@ class Main extends PluginBase implements Listener{
 			$p->getInventory()->setHotbarSlotIndex(8,8);
 			$p->getInventory()->setItem(9, Item::get($this->getConfig()->get("slot9"),0,1));
 			$p->getInventory()->setItem(10, Item::get($this->getConfig()->get("slot10"),0,1));
+			$p->getInventory()->setItem(11, Item::get($this->getConfig()->get("slot11"),0,1));
+			$p->getInventory()->setItem(12, Item::get($this->getConfig()->get("slot12"),0,1));
+			$p->getInventory()->setItem(13, Item::get($this->getConfig()->get("slot13"),0,1));
+			$p->getInventory()->setItem(14, Item::get($this->getConfig()->get("slot14"),0,1));
+			$p->getInventory()->setItem(15, Item::get($this->getConfig()->get("slot15"),0,1));
+			$p->getInventory()->setItem(16, Item::get($this->getConfig()->get("slot16"),0,1));
+			$p->getInventory()->setItem(17, Item::get($this->getConfig()->get("slot17"),0,1));
+			$p->getInventory()->setItem(18, Item::get($this->getConfig()->get("slot18"),0,1));
+			$p->getInventory()->setItem(19, Item::get($this->getConfig()->get("slot19"),0,1));
+			$p->getInventory()->setItem(20, Item::get($this->getConfig()->get("slot20"),0,1));
+			$p->getInventory()->setItem(21, Item::get($this->getConfig()->get("slot21"),0,1));
+			$p->getInventory()->setItem(22, Item::get($this->getConfig()->get("slot22"),0,1));
+			$p->getInventory()->setItem(23, Item::get($this->getConfig()->get("slot23"),0,1));
+			$p->getInventory()->setItem(24, Item::get($this->getConfig()->get("slot24"),0,1));
+			$p->getInventory()->setItem(25, Item::get($this->getConfig()->get("slot25"),0,1));
+			$p->getInventory()->setItem(26, Item::get($this->getConfig()->get("slot26"),0,1));
+			$p->getInventory()->setItem(27, Item::get($this->getConfig()->get("slot27"),0,1));
+			$p->getInventory()->setItem(28, Item::get($this->getConfig()->get("slot28"),0,1));
+			$p->getInventory()->setItem(29, Item::get($this->getConfig()->get("slot29"),0,1));
+			$p->getInventory()->setItem(30, Item::get($this->getConfig()->get("slot30"),0,1));
+			$p->getInventory()->setItem(31, Item::get($this->getConfig()->get("slot31"),0,1));
+			$p->getInventory()->setItem(32, Item::get($this->getConfig()->get("slot32"),0,1));
+			$p->getInventory()->setItem(33, Item::get($this->getConfig()->get("slot33"),0,1));
+			$p->getInventory()->setItem(34, Item::get($this->getConfig()->get("slot34"),0,1));
+			$p->getInventory()->setItem(35, Item::get($this->getConfig()->get("slot35"),0,1));
+			$p->getInventory()->setItem(36, Item::get($this->getConfig()->get("slot36"),0,1));
     		}
     	}
     }
