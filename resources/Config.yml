@@ -1,30 +1,50 @@
 #settings
 GiveItemsOnJoin: true
 GiveItemsOnRespawn: true
-ClearItemsAfterUse: true
+ClearItemsAfterUse: false
 workingworlds:
-- Lobby
+- Hubria
 #please dont add more slots
-slot1: 276
-slot1-Tip: §6Tap on the ground to go to PvP!
-slot1-command: mw tp {PLAYER} world
 
-slot2: 267
-slot2-Tip: §6Tap on the ground to go to 1vs1!
-slot2-command: tp {PLAYER} -881 6 233
+//slot1: 0
+//slot1-Tip: 
+//slot1-command: 
 
-slot3: 261
-slot3-Tip: §6Tap on the ground to go to Skywars!
-slot3-command: tp {PLAYER} -909 7 304
+///slot2: 0
+//slot2-Tip: 
+//slot2-command: 
 
-slot4: 1
-slot4-Tip: §6Tap on the ground to go to MyPlot!
-slot4-command: mw tp {PLAYER} plot
+//slot3: 0
+//slot3-Tip: 
+//slot3-command: 
 
-slot5: 283
-slot5-Tip: §6Tap on the ground to go to SurvivalGames!
-slot5-command: tp {PLAYER} -811 7 203
+//slot4: 0
+//slot4-Tip: 
+//slot4-command: 
 
-slot6: 339
-slot6-Tip: §6Tap on the ground to see your money!
-slot6-command: rca {PLAYER} mymoney
+//slot5: 0
+//slot5-Tip: 
+//slot5-command: 
+
+//slot6: 0
+//slot6-Tip: 
+//slot6-command: 
+
+//slot7: 0
+//slot7-Tip: 
+//slot7-command: 
+
+slot8: 347
+slot8-Tip: 
+slot8-command: 
+
+// add from here!
+
+slot9: 0
+slot9-Tip: 
+slot9-command: 
+
+slot10: 340
+slot10-Tip: 
+slot10-command: 
+
